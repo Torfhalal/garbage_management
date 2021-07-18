@@ -1,0 +1,48 @@
+{% extends'base.html.twig' %}
+
+
+{% block body %}
+
+    <div id="message">
+        <h1>Gestion des déchets</h1>
+    </div>
+
+    <div id="create">
+        <p href="">Signaler un déchet</p>
+    </div>
+
+    <div id="form">
+        {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.weight) }}
+        <label id="nomenclature">Type de déchets</label>
+        {{ form_widget(form.nomenclature, {'attr': {'class': 'nomenclature'}}) }}
+        {{ form_row(form.request) }}
+            {{ form_rest(form) }}
+        <button id="send">Envoyer</button>
+        {{ form_end(form) }}
+    </div>
+
+    <div id="search">
+        <input type="text" id="searchInput" placeholder="Chercher..">
+        <div id='submitsearch'>
+        </div>
+    </div>
+
+    <div id="result">
+        <table>
+        {% for garbage in queries %}
+            <tr>
+                <td>{{ garbage.name }}</td>
+                <td>{{ garbage.reference }}</td>
+                <td>{{ garbage.weight }}</td>
+                <td>{{ garbage.nomenclature }}</td>
+                <td>{{ garbage.creation |date('d-m-Y') }}</td>
+                <td>{{ garbage.request |date('d-m-Y') }}</td>
+                <td><a href="" id="">Consulter</a></td>
+                <td><a href="{{ path('garbage_download') }}" id="">Télécharger</a></td>
+            </tr>
+        {% endfor %}
+        </table>
+    </div>
+{% endblock %}

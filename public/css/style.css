@@ -1,0 +1,110 @@
+*{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template: 20% 38px 3fr / 5% 60% 1fr;
+    background-image: linear-gradient(to bottom right, lightblue, darkseagreen);
+    font-family: 'Trebuchet MS', sans-serif;
+
+}
+
+#message{
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+#create{
+    grid-area: 1/3/2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    grid-area: 2/3/4/4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*margin: 25px 10% 0 10%;*/
+}
+
+#form label{
+    display: block;
+    margin-top: 10px;
+}
+
+.nomenclature{
+    width: 70%;
+}
+
+#send{
+    margin-top: 25px;
+}
+
+#create{
+    font-size: 24px;
+}
+
+#search{
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput{
+    padding: 12px 10px;
+    width: 60vw;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#result{
+    grid-area: 3/2/6/3;
+    display: flex;
+    background-color: rgba(255, 255, 255, .15);
+    color: antiquewhite;
+    line-height: 15px;
+}
+
+#result table{
+    width: 100%;
+    background-color: dimgrey;
+}
+
+#result tr{
+    display: block;
+    background-color: grey;
+    border: 2px solid black;
+    margin: 4px 0;
+    padding: 2px 0;
+    text-align: center;
+}
+
+#result td{
+    display: inline-block;
+    width: 12%;
+    border-right: 2px solid black;
+}
+
+#result td:last-child{
+    border-right: none;
+}
+
+#result a{
+    color: darkblue;
+}
