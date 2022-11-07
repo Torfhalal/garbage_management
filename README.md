@@ -1,18 +1,64 @@
-# garbage_management
-The first Symfony application I made (HUGGII entry test)
+# Garbage Management
 
-Needs:
-- User can create a garbage ✅
-- While create, a PDF file is create (named BSD) and can be preview/download ❌ (Environment problem, will be fixed soon)
-- Garbage list page ✅
-- User can order garbages by submit date ✅
-- User can order garbages by treatment request date ❌ (Need to done it with Ajax cause no refresh allowed)
+> The first Symfony application I made - HUGGII entry test
 
-Main page:
-![alt text](https://github.com/Torfhalal/garbage_management/blob/master/Main.png?raw=true)
+## Table of Contents
 
-Form fill:
-![alt text](https://github.com/Torfhalal/garbage_management/blob/master/Form_fill.png?raw=true)
+- [Garbage Management](#garbage-management)
+  - [Table of Contents](#table-of-contents)
+  - [General Information](#general-information)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+  - [Setup](#setup)
+  - [Usage](#usage)
+  - [Project Status](#project-status)
+  - [Room for Improvement](#room-for-improvement)
+  - [Contact](#contact)
 
-Informations Display:
-![alt text](https://github.com/Torfhalal/garbage_management/blob/master/Informations_display.png?raw=true)
+## General Information
+
+- I had to develop a web application for a garbage management company in PHP or Symfony.
+- It was a test for the HUGGII company and I decided to make it in Symfony.
+
+## Technologies Used
+
+- [Symfony](https://symfony.com/)
+
+## Features
+
+- User can create a garbage
+- Garbage list page
+- User can order garbages by submit date
+
+## Screenshots
+
+![Main page](./Main.png)
+
+![Form fill](./Form_fill.png)
+
+![Informations Display](./Informations_display.png)
+
+## Setup
+
+_To do_
+
+## Usage
+
+_To do_
+
+## Project Status
+
+Project is: _no longer being worked on_.
+
+## Room for Improvement
+
+To do:
+
+- While create, a PDF file is create (named BSD) and can be preview/download (Environment problem, will be fixed soon)
+
+- User can order garbages by treatment request date (Need to done it with Ajax cause no refresh allowed)
+
+## Contact
+
+Created by [@alextison](https://www.github.com/alextison) - feel free to contact me!
