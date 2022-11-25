@@ -45,6 +45,12 @@ _To do_
 
 ## Usage
 
+composer install
+symfony server:start / php bin/console server:run
+
+psql -U postgres
+INSERT INTO garbage (id, name, reference, weight, nomenclature, creation, request) VALUES (1, 'carton', 23213, 23, 12, '2022-11-25', '2022-11-25');
+
 _To do_
 
 ## Project Status
